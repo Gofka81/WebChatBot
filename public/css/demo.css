@@ -1,50 +1,260 @@
-* {
-    box-sizing: border-box;
-  }
-  
-  body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  /* Style the side navigation */
-  .sidenav {
+.col-9{
+  overflow: hidden;
+}
+.general-div{
+    /*background-image: linear-gradient(to left, rgb(117, 121, 122), rgb(174, 175, 171));*/
+    background-color: #efecec;
+    width: 900px;
+    margin: auto;
+    max-width: 100%;
+    margin-top: 30px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+.welcome-div{
+    background-color: #62858d;;
+    margin-bottom: 15px;
+    position: relative;
+    min-height: 30px;
+}
+.welc-txt1{
+    margin-bottom: 0;
+    text-align: center;
+    background-color: #005CAF;
+    border-radius: 30px;
+}
+.col-3{
+    /*background-image: linear-gradient(to left, rgb(15, 120, 161), rgb(89, 19, 180));*/
+    background-color: #62858d;;
+    max-height: 100%;
+    width: 25% !important;
+    float: left;
+    margin-left: 10px;
+    border-radius: 30px;
+    max-width: 100%;
+    margin-bottom: 10px;
     height: 100%;
-    width: 200px;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #111;
-    overflow-x: hidden;
-  }
-
-  /*make the active user text inherit style from container*/
-
-  .inbox__people{
+}
+@media screen and (max-width: 1100px) {
+    .col-3 {
+        width: 60% !important;
+        float: none;
+        max-width: none;
+        margin: auto;
+        margin-bottom: 10px;
+    }
+}
+#msgbox{
+  background-color: aliceblue;
+    height: 420px;
+    width: 550px;
+    margin: auto;
+    max-width: 100%;
+    overflow: hidden;
+    margin-top: 0;
+    padding-top: 10px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}   
+.fallback{
+  position: relative;
+}
+.navbar-toggler {
+    background-color: aliceblue !important;
+    padding: 0.25rem 0.75rem;
+    font-size: 1.25rem;
+    line-height: 1;
+    border: 1px solid transparent;
+    border-radius: 0.25rem;
+    transition: box-shadow .15s;
+}
+#exit{
+    text-align: center;
+    max-width: 100%;
+    background-color: #005CAF;
+    border-radius: 10px;
+    float: right;
+    color: aliceblue;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+form {
+    padding: 15px 25px;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    }
+.inbox__messages {
+    text-align: left;
+    margin: 0 auto;
+    margin-top: 5px;
+    padding: 10px;
+    background-color: #62858d;;
+    height: 300px;
+    width: 530px;
+    border-right: 1px solid #a7a7a7;
+    border-top: 1px solid #a7a7a7;
+    border-left: 1px solid #a7a7a7;
+    overflow-y: auto;
+    overflow-x: auto;
+    color: aliceblue;
+    max-width: 100%;
+    }
+.centre-txt, .welc-txt, .welc-txt1{
+  color: aliceblue;
+    text-align: center;
+    margin: 0;
+}
+  .ed-div{
       color: white;
-      padding: 16px;
+      margin-bottom: 10px;
+      width: 100%;
+      margin-top: 5px;
+      max-width: 100%;
+      max-height: 100%;
+      height: auto;
   }
-  
-  
-  /* Side navigation links */
-  .sidenav a {
-    color: white;
-    padding: 16px;
-    text-decoration: none;
-    display: block;
+  .message_form__input{
+    width: 400px;
+    height: 40px;
   }
+  .message_form__button{
+    color: #fff;
+    background-color: #005CAF;
+    border-color: grey;
+    display: inline-block;
+    width:120px;
+    height: 40px;
+    text-align: center;
+  }
+  .inbox__messages, #typesOrnot{
+    background-color: #62858d !important;
+  }
+  #typesOrnot {
+  width: 530px;
+  max-width: 100%;
+  height: 30px;
+  max-width: 100%;
+  border-right: 1px solid #a7a7a7;
+  border-bottom: 4px solid #a7a7a7;
+  border-left: 1px solid #a7a7a7;
+  top: 0;
+  left: 0;
+  text-align: left;
+  color: #fff;
+  margin: auto;
+}
+.message_form{
+  position: relative;
+  
+}
+.chat_id{
+   background-image: linear-gradient(to left, rgb(56, 63, 66), rgb(31, 31, 30));
+   width: 100%;
+   max-width: 100%;
+   max-height: 100%;
+   height: auto;
+   border-radius: 30px;
+  color: #fff;
+  font-size: 15px;
+	font-weight: bold;
+  word-wrap: break-word;
+}
+.nav-link, .navbar-brand {
+    color: aliceblue !important;
+    font-family: "Montserrat", sans-serif;
+}
+.chat_info{
+  background-color: #919191;
+  opacity: 80%;
+  display: flex;
+  flex-direction: column;
+  min-height: 30px;
+  border-radius: 15px;
+  margin-top: 3px;
+  max-width: 100%;
+  max-height: 100%;
+  margin-bottom: 3px;
+  word-wrap: break-word;
+}
+.incoming__message {
+  background-image: linear-gradient(to left, #4f97d6, #005CAF);
+  display: flex;
+  flex-direction: column;
+  min-height: 30px;
+  border-radius: 15px;
+  margin-top: 3px;
+  padding-right: 10px;
+  max-width: 70%;
+  margin-bottom: 3px;
+  word-wrap: break-word;
+  align-self: flex-start; /* Aligns incoming messages to the left */
+}
 
+.outgoing__message {
+  background-image: linear-gradient(to left, rgb(56, 63, 66), rgb(31, 31, 30));
+  display: flex;
+  flex-direction: column;
+  min-height: 50px;
+  border-radius: 15px;
+  margin-top: 3px;
+  padding-right: 8px;
+  max-width: 70%;
+  margin-bottom: 3px;
+  word-wrap: break-word;
+  align-self: flex-end; /* Aligns outgoing messages to the right */
+}
 
-  
-  /* Change color on hover */
-  .sidenav a:hover {
-    background-color: #ddd;
-    color: black;
+.messages__history {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch; /* Ensures that child elements can align themselves with flex-start or flex-end */
+}
+
+.great-div{
+  height: 10px;
+  background-color: white;
+  animation-name: change;
+  animation-duration: 2s;
+  animation: change 2s infinite;
+  margin: auto;
+  margin-bottom: 12px;
+  margin-top: 12px;
+  width: 300px;
+  border-radius: 60px;
+}
+@keyframes change {
+    from {background-color: rgb(43, 76, 87);}
+    to {background-color: rgb(18, 85, 107);}
   }
-  
-  /* Style the content */
-  .content {
-    margin-left: 200px;
-    padding-left: 20px;
+.inbox__people{
+  overflow:auto;
+}
+.msg-txt{
+  margin: 0;
+  padding-left: 7px;
+}
+.msg-time{
+  margin: 0;
+  padding-left: 7px;
+  font-size: 12px;
+}
+.centre-txt{
+  text-align: center;
+  margin: auto;
+}
+.typing-txt{
+  font-weight: 500;
+}
+.text-det3 {
+    color: aliceblue;
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+    margin: 0;
+}
+
+@media (max-width: 768px) {
+  .welc-txt, .welc-txt1 {
+    font-size: 14px;
   }
+}
