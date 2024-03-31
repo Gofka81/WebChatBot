@@ -67,7 +67,7 @@ html {
 }
 .great-div{
   height: 10px;
-  background-color: white;
+  background-color: aliceblue;
   animation-name: change;
   animation-duration: 2s;
   animation: change 3s infinite;
@@ -76,7 +76,7 @@ html {
   border-radius: 60px;
 }
 @keyframes change {
-    from {background-color: white;}
+    from {background-color: aliceblue;}
     to {background-color: lightblue;}
   }
 .polaroid {
@@ -102,7 +102,7 @@ html {
     max-height: 250px;
 }
 .border-div{
-    background-color: white;
+    background-color: aliceblue;
     border: 3px solid aliceblue;
 }
 #pal-img1{
